@@ -1,0 +1,4 @@
+.root {
+    -fx-background-image: url("../picture/BackgroundPhoto/title.png");
+    -fx-background-radius: 25px;
+}

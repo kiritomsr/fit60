@@ -1,0 +1,21 @@
+
+
+.pagination .pagination-control {
+    /*-fx-background-color: #47e5ce;*/
+}
+
+.pagination .pagination-control .bullet-button {
+    -fx-background-color: transparent, #47e5ce, #47e5ce, white, white;
+}
+
+.pagination .pagination-control .bullet-button:selected {
+    -fx-background-color: transparent, #47e5ce, #47e5ce, white, #47e5ce;
+}
+
+.pagination .pagination-control .left-arrow, .right-arrow{
+    -fx-background-color: #47e5ce, #47e5ce;
+}
+
+.recharge {
+    -fx-background-image: url("../picture/BackgroundPhoto/trainer.jpg");
+}

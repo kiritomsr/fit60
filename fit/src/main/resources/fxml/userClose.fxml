@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" styleClass="root" stylesheets="@../css/Register.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sixty.Controller.UserCloseController">
+   <children>
+      <Label layoutX="9.0" prefHeight="66.0" prefWidth="152.0" text="Fitness" textFill="#47e5ce">
+         <font>
+            <Font name="Harlow Solid Italic" size="48.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="141.0" prefHeight="50.0" prefWidth="91.0" text="Username" textFill="#fdffff">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="179.0" layoutY="231.0" prefHeight="50.0" prefWidth="81.0" text="Password" textFill="#fdffff">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginUsername" disable="true" layoutX="294.0" layoutY="141.0" prefHeight="50.0" prefWidth="320.0" promptText="Username" style="-fx-background-radius: 15;">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="loginPassword" layoutX="297.0" layoutY="232.0" prefHeight="50.0" prefWidth="320.0" promptText="Password" style="-fx-background-radius: 15;">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="loginButton" layoutX="169.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#closeClicked" prefHeight="50.0" prefWidth="170.0" style="-fx-background-color: #1addc0; -fx-background-radius: 10;" text="Close Account" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="415.0" layoutY="326.0" mnemonicParsing="false" onMouseClicked="#cancelClicked" prefHeight="50.0" prefWidth="170.0" style="-fx-background-radius: 10;" text="Cancel" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginInfo" layoutX="297.0" layoutY="285.0" prefHeight="35.0" prefWidth="320.0" text="loginInfo" textAlignment="CENTER" textFill="#47e5ce" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="80.0" fitWidth="66.0" layoutX="85.0" layoutY="133.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/loginUser.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="86.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/loginPassword.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="68.0" prefHeight="50.0" prefWidth="268.0" text="Account Closing - Confirmation" textFill="RED">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

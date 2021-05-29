@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sixty.Controller.AdminAddVideoController">
+   <children>
+      <ImageView fitHeight="611.0" fitWidth="1066.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/BackgroundPhoto/trainer.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="60.0" stroke="GREY" strokeLineCap="ROUND" strokeType="INSIDE" width="1066.0" />
+      <ToolBar fx:id="video" layoutX="698.0" layoutY="14.0" onMouseClicked="#jumpToVideoManagement" prefHeight="40.0" prefWidth="184.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/videoManagement.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="140.0" text="Video Management" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video1" layoutX="572.0" layoutY="14.0" prefHeight="40.0" prefWidth="134.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/addVideo.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="75.0" text="Add video" textFill="#47e5ce">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video2" layoutX="468.0" layoutY="14.0" onMouseClicked="#jumpToTrainerInfo" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="29.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/trainerTitle.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="59.0" text="Trainer" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video4" layoutX="882.0" layoutY="14.0" onMouseClicked="#jumpToIncome" prefHeight="40.0" prefWidth="184.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/income.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="135.0" text="Income statistics" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <TextField fx:id="videoTitle" layoutX="150.0" layoutY="145.0" prefHeight="50.0" prefWidth="300.0" promptText="Enter the video title" style="-fx-background-radius: 15;">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="videoType" layoutX="150.0" layoutY="291.0" prefHeight="50.0" prefWidth="300.0" promptText="Choose the type here" style="-fx-background-radius: 15;" />
+      <TextField fx:id="videoUrl" disable="true" layoutX="150.0" layoutY="437.0" prefHeight="50.0" prefWidth="300.0" promptText="Video Path" style="-fx-background-radius: 15;">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </TextField>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#d2d2d2" height="300.0" layoutX="575.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="350.0" />
+      <MediaView fx:id="videoMedia" fitHeight="300.0" fitWidth="350.0" layoutX="575.0" layoutY="125.0" />
+      <Button fx:id="videoUpload" layoutX="802.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#clickUpload" prefHeight="35.0" prefWidth="80.0" style="-fx-background-radius: 15;" text="Upload" textFill="#f78c60">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="videoChoose" layoutX="635.0" layoutY="465.0" mnemonicParsing="false" onMouseClicked="#chooseFile" prefHeight="35.0" prefWidth="80.0" style="-fx-background-radius: 15;" text="Choose">
+         <font>
+            <Font name="Comic Sans MS" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="80.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/videoTitle.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="80.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/videoType.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="58.0" fitWidth="50.0" layoutX="80.0" layoutY="440.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/videoUrl.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="addInfo" layoutX="111.0" layoutY="74.0" prefHeight="50.0" prefWidth="427.0" text="Label" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <ToolBar fx:id="video3" layoutX="356.0" layoutY="14.0" onMouseClicked="#jumpToMemberInfo" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/user.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="64.0" text="Member" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video31" layoutX="247.0" layoutY="14.0" onMouseClicked="#adminLogout" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/logOut.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="64.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

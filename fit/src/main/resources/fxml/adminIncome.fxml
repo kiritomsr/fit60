@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sixty.Controller.AdminIncomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GREY" height="60.0" stroke="GREY" strokeLineCap="ROUND" strokeType="INSIDE" width="1066.0" />
+      <ToolBar fx:id="video" layoutX="698.0" layoutY="14.0" onMouseClicked="#jumpToVideoManagement" prefHeight="40.0" prefWidth="184.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="31.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/videoManagement.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="140.0" text="Video Management" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video1" layoutX="572.0" layoutY="14.0" onMouseClicked="#jumpToAddVideo" prefHeight="40.0" prefWidth="126.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/addVideo.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="75.0" text="Add video" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video2" layoutX="468.0" layoutY="14.0" onMouseClicked="#jumpToTrainerInfo" prefHeight="40.0" prefWidth="104.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="29.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/trainerTitle.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="59.0" text="Trainer" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar fx:id="video3" layoutX="356.0" layoutY="14.0" onMouseClicked="#jumpToMemberInfo" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/user.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="64.0" text="Member" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ToolBar layoutX="882.0" layoutY="14.0" prefHeight="40.0" prefWidth="184.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="29.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/income.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="135.0" text="Income statistics" textFill="#47e5ce">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+      <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="393.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../picture/icon/income.png" />
+         </image>
+      </ImageView>
+      <ToolBar fx:id="video31" layoutX="237.0" layoutY="14.0" onMouseClicked="#adminLogout" prefHeight="40.0" prefWidth="112.0" style="-fx-background-color: GREY;">
+         <items>
+            <ImageView fitHeight="23.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../picture/icon/logOut.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="29.0" prefWidth="64.0" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS" size="16.0" />
+               </font>
+            </Label>
+         </items>
+      </ToolBar>
+   </children>
+</AnchorPane>
